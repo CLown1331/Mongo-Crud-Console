@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using System;
 
 namespace Mongo_Crud_Console
 {
@@ -6,7 +8,11 @@ namespace Mongo_Crud_Console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // setup our DI
+            var serviceProvider = new ServiceCollection()
+                .AddLogging()
+                .BuildServiceProvider();
+
         }
     }
 }
