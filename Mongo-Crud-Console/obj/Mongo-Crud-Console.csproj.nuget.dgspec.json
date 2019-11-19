@@ -42,17 +42,13 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -71,6 +67,10 @@
             "Newtonsoft.Json.Bson": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "SimpleInjector": {
+              "target": "Package",
+              "version": "[4.7.1, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",

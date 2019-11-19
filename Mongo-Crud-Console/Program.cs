@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
+using Mongo_Crud_Console.DataBaseSettings;
+using SimpleInjector;
 using System;
-using System.Configuration;
 
 namespace Mongo_Crud_Console
 {
@@ -9,13 +9,8 @@ namespace Mongo_Crud_Console
     {
         static void Main(string[] args)
         {
-            var appSettings = ConfigurationManager.AppSettings;
-
             // setup our DI
-            var serviceProvider = new ServiceCollection()
-                .AddLogging()
-                .BuildServiceProvider();
-
+            Container container = new Container();
         }
     }
 }
